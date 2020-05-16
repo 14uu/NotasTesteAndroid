@@ -22,9 +22,9 @@ public class MinMaxFilter implements InputFilter {
     @Override
     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
         try {
-            for (int i = dstart; i <= dend; i++){
-
-            }
+            //TODO: fix that
+            // when typing a decimal number just below the max (such as 9.9 if the max is 10) and
+            // deleting the decimal dot the filter allows  it to happen
             StringBuilder inputText = new StringBuilder();
             inputText.append(dest, 0, dstart);
             inputText.append(source);
