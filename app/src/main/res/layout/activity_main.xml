@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tfNota"
+        android:layout_width="181dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rgNotas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rgNotas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rgNotas"
+        android:layout_width="103dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="136dp"
+        android:checkedButton="@id/rbNota1"
+        app:layout_constraintEnd_toStartOf="@+id/tfNota"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbNota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeSelected"
+            android:text="@string/grade1" />
+
+        <RadioButton
+            android:id="@+id/rbNota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeSelected"
+            android:text="@string/grade2" />
+
+        <RadioButton
+            android:id="@+id/rbNota3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeSelected"
+            android:text="@string/grade3" />
+
+        <RadioButton
+            android:id="@+id/rbNota4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeSelected"
+            android:text="@string/grade4" />
+
+        <RadioButton
+            android:id="@+id/rbNota5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeSelected"
+            android:text="@string/grade5" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="showResults"
+        android:text="@string/btnRes"
+        app:layout_constraintEnd_toEndOf="@+id/tfNota"
+        app:layout_constraintStart_toStartOf="@+id/rgNotas"
+        app:layout_constraintTop_toBottomOf="@+id/rgNotas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">"NotasTeste"</string>
+    <string name="grade1">Nota 1</string>
+    <string name="grade2">Nota 2</string>
+    <string name="grade3">Nota 3</string>
+    <string name="grade4">Nota 4</string>
+    <string name="grade5">Nota 5</string>
+    <string name="btnRes">Resultado</string>
+    <string name="approved">Aluno passou</string>
+    <string name="reproved">Aluno reprovou</string>
+    <string name="wGrades">com as notas:</string>
+</resources>
