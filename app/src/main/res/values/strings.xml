@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">"NotasTeste"</string>
+    <string name="app_name">"TestaNotas"</string>
     <string name="grade1">Nota 1</string>
     <string name="grade2">Nota 2</string>
     <string name="grade3">Nota 3</string>
