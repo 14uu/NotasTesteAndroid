@@ -1,5 +1,7 @@
 package com.example.notasTeste;
 
+import java.util.Arrays;
+
 public class Aluno {
     private double VermlehaThreshold = 7;
     public double[] Notas = new double[5];
@@ -13,8 +15,6 @@ public class Aluno {
         return ((Notas.length - VermelhaCount) > VermelhaCount);
     }
     Aluno(){
-        for(int i = 0; i <Notas.length; i++){
-            Notas[i] = 0;
-        }
+        Arrays.fill(Notas, 0);
     }
 }
